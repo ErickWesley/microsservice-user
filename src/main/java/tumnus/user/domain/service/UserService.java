@@ -15,7 +15,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserService {
 
-    private UserRepository repository;
+    private final UserRepository repository;
 
     public User salvar(User user) {
         return repository.save(user);
